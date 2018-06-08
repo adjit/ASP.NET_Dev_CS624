@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Ch10Cart.Site" ClientIDMode="Static" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Ch10: Shopping Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="headPlaceholder" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" class="form-horizontal">
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <!-- navbar head - Brand and menu button -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" 
+                    data-toggle="collapse" data-target="#mainMenu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/Order.aspx">Halloween Store</a>
+            </div>
+
+            <!-- navbar body - nav content for toggling -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul id="navList" runat="server" class="nav navbar-nav">
+                    <li runat="server"> 
+                        <asp:HyperLink NavigateUrl="~/Order.aspx" runat="server">
+                            <span class="glyphicon glyphicon-home"></span>Home
+                        </asp:HyperLink></li>
+                    <li runat="server" class="dropdown">
+                        <asp:HyperLink runat="server" NavigateUrl="~/Products.aspx" 
+                            CssClass="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-tasks"></span>Products
+                            <span class="caret"></span>
+                        </asp:HyperLink>
+                        <ul class="dropdown-menu">
+                            <li runat="server">
+                                <asp:HyperLink NavigateUrl="~/Products.aspx" runat="server">
+                                    <span class="glyphicon glyphicon-tags"></span>All
+                                </asp:HyperLink></li>
+                            <li runat="server">
+                                <asp:HyperLink NavigateUrl="~/Products.aspx?catID=costumes" runat="server">
+                                    <span class="glyphicon glyphicon-sunglasses"></span>Costumes
+                                </asp:HyperLink></li>
+                            <li runat="server">
+                                <asp:HyperLink NavigateUrl="~/Products.aspx?catID=fx" runat="server">
+                                    <span class="glyphicon glyphicon-flash"></span>Effects
+                                </asp:HyperLink></li>
+                            <li runat="server">
+                                <asp:HyperLink NavigateUrl="~/Products.aspx?catID=masks" runat="server">
+                                    <span class="glyphicon glyphicon-user"></span>Masks
+                                </asp:HyperLink></li>
+                            <li runat="server">
+                                <asp:HyperLink NavigateUrl="~/Products.aspx?catID=props" runat="server">
+                                    <span class="glyphicon glyphicon-wrench"></span>Props
+                                </asp:HyperLink></li>
+                        </ul>
+                    </li>
+                    <li runat="server">                               
+                        <asp:HyperLink NavigateUrl="~/Cart.aspx" runat="server">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>Cart
+                            <span id="spanCount" runat="server" class="badge"></span>
+                        </asp:HyperLink></li>
+                    <li runat="server">
+                        <asp:HyperLink NavigateUrl="~/ContactUs.aspx" runat="server">
+                            <span class="glyphicon glyphicon-earphone"></span>Contact Us
+                        </asp:HyperLink></li>
+                    <li runat="server">
+                        <asp:HyperLink NavigateUrl="~/AboutUs.aspx" runat="server">
+                            <span class="glyphicon glyphicon-bullhorn"></span>About Us
+                        </asp:HyperLink></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+            
+            <header class="jumbotron"></header>
+            <main class="row">
+                <div class="col-sm-12">
+                    <ol class="breadcrumb">
+                        <asp:Literal ID="litBreadcrumb" runat="server"></asp:Literal>
+                    </ol>
+                    <h1><asp:Label ID="lblPageHeader" runat="server"></asp:Label></h1>
+                    <asp:ContentPlaceHolder ID="mainPlaceholder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </main>
+            <footer class="text-center text-capitalize">
+                <p>copyright &copy; the halloween super store, all rights reserved.</p>
+            </footer>
+
+        </form>
+    </div>
+
+</body>
+</html>

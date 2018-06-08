@@ -1,0 +1,45 @@
+﻿/*** Bootstrap overrides ***/
+.container {
+    margin-bottom: 1em;
+}
+
+.jumbotron {
+    background: url("../Images/banner.jpg");
+    background-size: 100% 100%;
+    margin-top: 1em;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+/* Styles needed for Customer List ListView */
+thead {
+    background-color: #8c8c8c;
+    color: #e7e7e7;
+}
+
+thead a {
+    color: white;
+}
+
+thead a:focus,
+thead a.focus,
+thead a:hover {
+    color: #000;
+}
+
+#ListView1_pager {
+    padding: 1em;
+    background-color: #8c8c8c;
+}
+
+#ListView1_pager a {
+    color: white;
+}
+
+#ListView1_pager a:focus,
+#ListView1_pager a.focus,
+#ListView1_pager a:hover {
+    color: #000;
+}

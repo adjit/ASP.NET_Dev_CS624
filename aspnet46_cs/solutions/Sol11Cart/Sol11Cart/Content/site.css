@@ -1,0 +1,70 @@
+﻿/*** Bootstrap overrides ***/
+.container {
+    border:1px solid #cecece;
+    margin-bottom: 1em;
+}
+
+.jumbotron {
+    background: url("../Images/banner.jpg");
+    background-size: 100% 100%;
+    margin-top: 1em;
+}
+
+.btn { 
+    margin-bottom: 1em;
+}
+
+.active a {
+    color: white;
+}
+
+.thumbnail {
+    min-height: 25em;
+}
+
+.thumbnail img {
+    height: 100px;
+    width: 100px;
+}
+
+nav li .badge {
+    margin-left: 0.5em;
+}
+
+nav li .glyphicon {
+    margin-right: 0.5em;
+}
+
+label {
+    font-weight: normal;
+}
+
+/*** Elements ***/
+body {
+    padding-top: 50px;
+}
+
+footer {
+    padding-bottom: 1em;
+}
+
+li a {
+    color: black;
+}
+
+thead {
+    background-color: #8c8c8c;
+}
+
+th {
+    color: white;
+}
+
+/*** server controls ***/
+#lblUnitPrice {
+    font-weight: bold;
+}
+
+#lstCart { 
+    min-height: 8em;
+}

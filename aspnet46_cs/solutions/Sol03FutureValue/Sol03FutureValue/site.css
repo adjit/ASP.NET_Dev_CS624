@@ -1,0 +1,49 @@
+﻿/* The styles for the elements */
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    width: 550px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid;
+}
+h1 {
+    font-size: 140%;
+    padding: 0;
+    margin-bottom: .5em;
+}
+label {
+    float: left;
+    width: 10em;
+}
+
+/* The styles for the classes (add in separate style sheet) */
+.entry {
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 10em;
+}
+
+.validator {
+    font-size: 95%;
+    color: red;
+    margin-left: 1em;
+}
+
+.button {
+    margin-top: 1em;
+    width: 10em;
+}
+
+/* The styles for the server controls */
+#ddlMonthlyInvestment {
+    width: 10em;
+}
+#lblFutureValue {
+    font-weight: bold;
+    margin-left: 1em;
+}
+#btnClear {
+    margin-left: 1em;
+}

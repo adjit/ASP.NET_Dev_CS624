@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Ch09Cart.Site" ClientIDMode="Static" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Ch09: Shopping Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="headPlaceholder" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+<div class="container">
+    <form id="form1" runat="server" class="form-horizontal">
+
+        <header class="jumbotron"><%-- image set in site.css --%></header>
+        <div class="row">
+            <aside class="col-sm-2">
+                <nav>
+                    <asp:BulletedList ID="blNav" runat="server" DisplayMode="HyperLink" 
+                        CssClass="nav nav-pills nav-stacked">
+                        <asp:ListItem Value="~/Order.aspx">Home</asp:ListItem>
+                        <asp:ListItem Value="~/Cart.aspx">Cart</asp:ListItem>
+                        <asp:ListItem Value="~/Products.aspx">Products</asp:ListItem>
+                        <asp:ListItem Value="~/ContactUs.aspx">Contact</asp:ListItem>
+                    </asp:BulletedList>
+                </nav>
+            </aside>
+            <main class="col-sm-9">
+                <h1><asp:Label ID="lblPageHeader" runat="server"></asp:Label></h1>
+                <asp:ContentPlaceHolder ID="mainPlaceholder" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+        </div>
+
+        <footer class="text-center text-info">
+            <asp:ContentPlaceHolder ID="footerPlaceHolder" runat="server">
+                <%-- default content - can be overridden by content pages --%>
+                <asp:Label ID="lblDaysUntilHalloween" runat="server"></asp:Label>
+            </asp:ContentPlaceHolder>
+        </footer>
+
+    </form>
+</div>
+</body>
+</html>

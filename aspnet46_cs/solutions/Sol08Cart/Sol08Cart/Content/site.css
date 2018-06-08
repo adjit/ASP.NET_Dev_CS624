@@ -1,0 +1,33 @@
+﻿/*** Bootstrap overrides ***/
+.container {
+    border:1px solid #cecece;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.jumbotron {
+    background: url("../Images/banner.jpg");
+    background-size: 100% 100%;
+    margin-top: 1em;
+}
+
+.btn { 
+    margin-bottom: 1em;
+}
+
+label {
+    font-weight: normal;
+}
+
+/*** elements ***/
+footer {
+    padding-bottom: 0.5em;
+}
+/*** server controls ***/
+#lblUnitPrice {
+    font-weight: bold;
+}
+
+#lstCart { 
+    min-height: 8em;
+}

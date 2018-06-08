@@ -1,0 +1,43 @@
+﻿/*** Bootstrap overrides ***/
+.container {
+    border:1px solid #cecece;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.jumbotron {
+    background: url("../Images/banner.jpg");
+    background-size: 100% 100%;
+    margin-top: 1em;
+}
+
+.nav > li > a {
+    color: #1c5e55;
+    font-weight: 600;
+}
+
+.btn { 
+    margin-bottom: 1em;
+}
+
+label {
+    font-weight: normal;
+}
+
+/*** Elements ***/
+footer {
+    padding-bottom: 1em;
+}
+
+/*** server controls ***/
+#lblDaysUntilHalloween {
+    color: #1c5e55;
+    font-weight: 600;
+}
+#lblUnitPrice {
+    font-weight: bold;
+}
+
+#lstCart { 
+    min-height: 8em;
+}

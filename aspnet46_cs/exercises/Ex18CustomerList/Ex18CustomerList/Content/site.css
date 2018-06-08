@@ -1,0 +1,25 @@
+﻿/*** Bootstrap overrides ***/
+.container {
+    border:1px solid #cecece;
+    margin-top: 1em;
+}
+
+.jumbotron {
+    background: url("../Images/banner.jpg");
+    background-size: 100% 100%;
+    margin-top: 1em;
+}
+
+label {
+    font-weight: normal;
+}
+
+/* Styles needed for State Label and GridView control */
+#lblState {
+    text-align: left;
+}
+
+thead {
+    background-color: #8c8c8c;
+    color: white;
+}

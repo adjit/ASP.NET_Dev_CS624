@@ -1,0 +1,42 @@
+﻿/*** Bootstrap overrides ***/
+.container {
+    border:1px solid #cecece;
+    margin-top: 1em;
+}
+
+.jumbotron {
+    background: url("../Images/banner.jpg");
+    background-size: 100% 100%;
+    margin-top: 1em;
+}
+
+label {
+    font-weight: normal;
+}
+
+/* Styles needed for CustomerList GridView */
+.table a {
+    color: white;
+}
+
+.bg-halloween {
+    background-color: #8c8c8c;
+    color: #e7e7e7;
+    font-weight: bold;
+}
+
+.pagerStyle {
+    font-weight: bold;
+}
+
+.pagerStyle a, .pagerStyle span {
+    margin-left: 1em;
+}
+
+.pagerStyle a {
+    color: white;
+}
+
+.pagerStyle span {
+    color: #e7e7e7;
+}
