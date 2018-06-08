@@ -70,6 +70,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\MurachLogo.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -96,7 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
