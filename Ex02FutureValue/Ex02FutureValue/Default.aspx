@@ -27,7 +27,7 @@
                 <tr>
                     <td class="auto-style2">Monthly Investment</td>
                     <td>
-                        <asp:DropDownList ID="MonthlyInvestment" runat="server" Width="265px">
+                        <asp:DropDownList ID="MonthlyInvestment" runat="server" Width="145px" EnableViewState="False">
                         </asp:DropDownList>
                     </td>
                 </tr>
