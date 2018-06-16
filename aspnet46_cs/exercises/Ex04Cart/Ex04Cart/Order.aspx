@@ -22,8 +22,8 @@
                     <div class="form-group">
                         <label class="col-sm-5">Please select a product:</label>
                         <div class="col-sm-6">
-                            <asp:DropDownList ID="ddlProducts" runat="server" CssClass="form-control">
-                            </asp:DropDownList>
+                            <asp:DropDownList ID="ddlProducts" runat="server" CssClass="form-control" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="ProductID">
+                            </asp:DropDownList><asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HalloweenConnection %>" SelectCommand="SELECT [ProductID], [Name], [ShortDescription], [LongDescription], [ImageFile], [UnitPrice] FROM [Products] ORDER BY [Name]"></asp:SqlDataSource>
                         </div>
                     </div>   
                     <div class="form-group">
@@ -58,7 +58,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-12">
-                            <asp:Button ID="btnAdd" runat="server" Text="Add to Cart" CssClass="btn" />
+                            <asp:Button ID="btnAdd" runat="server" Text="Add to Cart" CssClass="btn" OnClick="btnAdd_Click" />
                             <asp:Button ID="btnCart" runat="server" Text="Go to Cart" 
                                 PostBackUrl="~/Cart.aspx" CausesValidation="False" CssClass="btn" />
                         </div>

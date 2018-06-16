@@ -19,20 +19,20 @@
     <main>
         <form id="form1" runat="server" class="form-horizontal" role="form">
             <div class="form-group">
-                <label class="control-label col-md-3" for="ddlMonthlyInvestment">
+                <label class="control-label col-xs-3" for="ddlMonthlyInvestment">
                     Monthly Investment:</label>
-                <div class="col-md-3">
+                <div class="col-xs-3">
                     <asp:DropDownList ID="ddlMonthlyInvestment" runat="server" CssClass="form-control">
                     </asp:DropDownList >
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-md-3" for="txtInterestRate">
+                <label class="control-label col-xs-3" for="txtInterestRate">
                     Annual interest rate:</label>
-                <div class="col-md-3">
+                <div class="col-xs-3">
                     <asp:TextBox ID="txtInterestRate" runat="server" CssClass="form-control">3.0</asp:TextBox>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xs-6">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
                         CssClass="text-danger" ErrorMessage="Interest rate is required." 
                         ControlToValidate="txtInterestRate" Display="Dynamic"></asp:RequiredFieldValidator>
@@ -43,12 +43,12 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-md-3" for="txtYears">
+                <label class="control-label col-xs-3" for="txtYears">
                     Number of years:</label>
-                <div class="col-md-3">
+                <div class="col-xs-3">
                     <asp:TextBox ID="txtYears" runat="server" CssClass="form-control">10</asp:TextBox>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xs-6">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                         CssClass="text-danger" ControlToValidate="txtYears" Display="Dynamic" 
                         ErrorMessage="Number of years is required."></asp:RequiredFieldValidator>
@@ -59,14 +59,14 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-md-3" for="lblFutureValue">
+                <label class="control-label col-xs-3" for="lblFutureValue">
                     Future Value:</label>
-                <div class="col-md-9">
+                <div class="col-xs-9">
                     <asp:Label ID="lblFutureValue" runat="server" CssClass="text-info"></asp:Label>
                 </div>
             </div>
             <div class="form-group">
-                <div class="col-md-offset-3 col-md-9">
+                <div class="col-xs-offset-3 col-xs-9">
                     <asp:Button ID="btnCalculate" runat="server" Text="Calculate" 
                         onclick="btnCalculate_Click" CssClass="btn btn-primary" />
                     <asp:Button ID="btnClear" runat="server" Text="Clear" 

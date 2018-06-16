@@ -27,9 +27,9 @@
                 <div class="col-sm-6"><%-- cart edit buttons column --%>
                     <div class="form-group">
                         <div class="col-sm-12"><asp:Button ID="btnRemove" runat="server" 
-                            Text="Remove Item" CssClass="btn" /></div>
+                            Text="Remove Item" CssClass="btn" OnClick="btnRemove_Click" /></div>
                         <div class="col-sm-12"><asp:Button ID="btnEmpty" runat="server" 
-                            Text="Empty Cart" CssClass="btn" /></div>
+                            Text="Empty Cart" CssClass="btn" OnClick="btnEmpty_Click" /></div>
                     </div>
                 </div>
             </div><%-- end of row 1 --%>
@@ -42,8 +42,8 @@
                     </div>
                     <div class="form-group"><%-- buttons --%>
                         <div class="col-sm-12">
-                            <asp:Button ID="btnContinue" runat="server" Text="Continue Shopping" CssClass="btn" />
-                            <asp:Button ID="btnCheckOut" runat="server" Text="Check Out" CssClass="btn" />
+                            <asp:Button ID="btnContinue" runat="server" Text="Continue Shopping" CssClass="btn" PostBackUrl="~/Order.aspx" />
+                            <asp:Button ID="btnCheckOut" runat="server" Text="Check Out" CssClass="btn" OnClick="btnCheckOut_Click" />
                         </div>
                     </div>
                 </div>

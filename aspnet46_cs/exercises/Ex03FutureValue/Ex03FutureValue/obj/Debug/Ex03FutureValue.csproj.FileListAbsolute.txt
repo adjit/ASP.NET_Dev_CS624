@@ -79,3 +79,4 @@ C:\Users\Adjit\Documents\GitHub\ASP.NET_Dev_CS624\aspnet46_cs\exercises\Ex03Futu
 C:\Users\Adjit\Documents\GitHub\ASP.NET_Dev_CS624\aspnet46_cs\exercises\Ex03FutureValue\Ex03FutureValue\obj\Debug\Ex03FutureValue.csproj.CopyComplete
 C:\Users\Adjit\Documents\GitHub\ASP.NET_Dev_CS624\aspnet46_cs\exercises\Ex03FutureValue\Ex03FutureValue\obj\Debug\Ex03FutureValue.dll
 C:\Users\Adjit\Documents\GitHub\ASP.NET_Dev_CS624\aspnet46_cs\exercises\Ex03FutureValue\Ex03FutureValue\obj\Debug\Ex03FutureValue.pdb
+C:\Users\Adjit\Documents\GitHub\ASP.NET_Dev_CS624\aspnet46_cs\exercises\Ex03FutureValue\Ex03FutureValue\obj\Debug\Ex03FutureValue.csprojAssemblyReference.cache

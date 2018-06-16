@@ -23,11 +23,25 @@ public class CartItem
 
     public string Display()
     {
-        string displayString = string.Format("{0} ({1} at {2})",
-            Product.Name, 
-            Quantity.ToString(),
-            Product.UnitPrice.ToString("c")
-        );
+        string displayString = "";
+
+        if (Quantity > 1)
+        {
+            displayString = string.Format("{0} ({1} at {2} each = {3})",
+                Product.Name,
+                Quantity.ToString(),
+                Product.UnitPrice.ToString("c"),
+                "$" + Math.Round(Quantity * Product.UnitPrice, 2)
+            );
+        }
+        else
+        {
+            displayString = string.Format("{0} ({1} at {2})",
+                Product.Name,
+                Quantity.ToString(),
+                Product.UnitPrice.ToString("c")
+            );
+        }
         return displayString;
     }
 }
