@@ -14,7 +14,28 @@ h1 {
     margin-bottom: .5em;
 }
 
+label {
+    float: left;
+    width: 10em;
+}
+
 /* The styles for the classes (add in separate style sheet) */
 
+.entry {
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 10em;
+}
+
+.button {
+    margin-top: 1em;
+    width: 10em;
+}
+
+.validator {
+    font-size: 95%;
+    color: red;
+    margin-left: 1em;
+}
 
 /* The styles for the server controls */
