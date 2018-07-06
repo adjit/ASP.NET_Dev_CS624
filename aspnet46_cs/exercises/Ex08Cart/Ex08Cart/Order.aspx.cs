@@ -21,11 +21,16 @@ namespace Ch08Cart
             {
                 ddlProducts.DataBind();
 
+              /*
                 Application.Lock();
                     int hitCount = Convert.ToInt32(Application["HitCount"]);
                     hitCount++;
                     Application["HitCount"] = hitCount.ToString();
                 Application.UnLock();
+                */
+
+                int hitCount = Convert.ToInt32(Cache.Get("HitCount")) + 1;
+                Cache.Insert("HitCount", hitCount, null, DateTime.Now.AddMinutes(5), Cache.NoSlidingExpiration);
 
                 lblPageHits.Text = hitCount.ToString();
             }
